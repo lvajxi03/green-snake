@@ -1,0 +1,46 @@
+#ifndef __PARAMS_H__
+#define __PARAMS_H__
+
+#define SCREEN_WIDTH 1200
+#define SCREEN_HEIGHT 735
+
+#define MAX_MENU_OPTS 6
+
+#define MONSTER_HEIGHT 22
+#define MONSTER_WIDTH 38
+
+#define MAX_MONSTERS 15
+
+#define BLOCK_WIDTH 30
+#define BLOCK_HEIGHT 30
+
+#define COLLIDE_COUNTER 8
+
+#define MODE_EASY 0
+#define MODE_NORMAL 1
+#define MODE_HARD 2
+#define MODE_UNLIMITED 3
+
+#define TIMER_TICK 2000
+#define TIMER_COUNTER 2001
+#define TIMER_COLLISION 2002
+#define TIMER_CONSUME 2003
+#define TIMER_FREEZE 2004
+
+#define TIMER_TICK_TIME 6
+#define TIMER_COUNTER_TIME 1000
+#define TIMER_COLLISION_TIME 300
+#define TIMER_CONSUME_TIME 50
+#define TIMER_FREEZE_TIME 1000
+
+#define TOP_OFFSET_MONSTER 104
+#define TOP_OFFSET 100
+
+#define FONT_BASIC "C64 Pro"
+#define FONT_BACKUP "Courier New"
+
+#define FONT_SIZE_SMALL 24
+#define FONT_SIZE_MEDIUM 28
+#define FONT_SIZE_LARGE 32
+
+#endif /* __PARAMS_H__ */

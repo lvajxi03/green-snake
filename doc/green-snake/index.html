@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>A Green Snake</title>
+    <link rel="stylesheet" type="text/css" href="/zw.css" />
+    <link rel="icon" type="image/x-icon" href="/green-snake/favicon.ico" />
+  </head>
+  <body>
+    <div id="top">
+      <p class="centered"><a href="/zw.7z">Download</a> | <a href="/zielony-waz">Polska wersja</a></p>
+    </div>
+    <h1>A Green Snake</h1>
+    <p class="centered"><a class="button"  href="/zw.7z">Download 7-zip archive</a></p>
+    <h2>About</h2>
+    <p>Game written as a tribute to original <em>Oil's Well</em> from the eighties, prototyped in <em>Python</em> programming language and <em>PyQT</em> library and finally made in <em>C++</em> for Windows using pure WinAPI.</p>
+    <div class="imageleft">
+      <p><a class="image" href="/images/game-en.jpg"><img src="/images/game-en-small.jpg"></a></p>
+    </div>
+    <h2>Installation</h2>
+    <p>This program is distributed as <em>7-zip archive</em> with single executable file inside, ready to run and play. You can extract the archive anywhere you want,  no extra directory structure is required.</p>
+    <p>The default font is awful and it's better to download and install <em>C64 Pro</em> (for instance, <a href="https://style64.org/release/c64-truetype-v1.2.1-style">here</a>)</p>
+    <h2>User manual</h2>
+    <p>Menu navigation includes cursor keys for selecting options and <em>Enter</em> to confirm your choice or left mouse button on selected option.</p>
+    <p>Switching languages is possible only with left mouse button.</p>
+    <p>This program does not create nor read any files, its own settings (last used game mode and hiscores table) are stored in system registry (individually per user)</p>
+    <h3>Game</h3>
+    <div class="imageright">
+      <p><a class="image" href="/images/game-frozen-en.jpg"><img src="/images/game-frozen-en-small.jpg"></a></p>
+    </div>
+    <p>Your goal is to complete all game levels (currently there are six of them) by controlling the green snake and collecting all available objects like yellow squares, purple diamonds and gold coins. For every object collected you get some points.</p>
+    <p>Level is completed when all objects are collected. You can see at the bottom status line that you have to hurry, otherwise you will lose. Every level has its own time counter (it grows with level number and game mode)</p>
+    <p>You need to use cursor keys to move snake. Snake is not able to eat itself. Moreover, you can use backspace key to move back.</p>
+    <p>You can eat <em>creatures</em> that moves from left to right and back, however they shall not collide with snake's body.</p>
+    <p><em>A Ghost</em> that appears sometimes, can hit snake's body, but you should avoid eating it (a collision will be also detected)</p>
+    <p>Three collisions means you lost.</p>    
+    <p>When you collect <em>blue pill</em> the level counter is frozen for 20 seconds, also all creatures stop. Collecting another blue pill increases the freeze counter back to 20 seconds.</p>
+    <h3 id="#no-limit" >No Time Limit Mode</h3>
+    <p>(No Time Limit Mode is proposed by my son, Antoni, who is 8 now)</p>
+    <p>When you collect a gold coin, new <em>sword</em> appears in a random place. You can collect them safely and the status line will show how many of them you have. This mode has collisions switched off and no time limit (yes, seriously)</p>
+    <p>This mode probably will be removed from options and for sure will not be developed at all.</p>
+    <h2>Contact with author</h2>
+    <p>If you have some concerns and issues, want to report a bug or just write to me with no reason, please use <a href="mailto:marcin@printf.pl?subject=(A Green Snake)">this address</a>.</p>
+    <h2>Misc</h2>
+    <p>Source code of this program was written in <em>Emacs</em> editor, graphics were made in <em>Inkscape</em> and <em>GIMP</em>. Everything was compiled, linked, debugged (many times!) and profiled with <em>MSYS2</em> collection of utilities.</p>
+    <p>Kudos to my son, Antoni, for all the feedback, dozens of ideas and many hours of testing.</p>
+    <p>Prototype was made on <em>Raspberry Pi</em> computer with <em>Ubuntu Linux</em> installed, also with <em>Emacs</em> editor, <em>GIMP</em> and <em>Inkscape</em> as well, however <em>Python 3</em> was main programming language and <em>PyQt 5</em> delivered all the windowing and user interface.</p>
+    <p>I'm not sure who send me the sounds in background (if you you're are an author, <a href="mailto:marcin@printf.pl">please write to me!</a>), however all the code is written entirely by me and I'm also an author of all the graphics. You can freely distribute this application and/or play the game to the bitter end.</p>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+CC := gcc
+INCLUDE := include
+SRC := src
+OBJ := obj
+OBJS := $(OBJ)/main.o
+CFLAGS := -I$(INCLUDE) $(sdl-config --cflags)
+LDFLAGS :=  $(sdl-config --libs)
+
+waz_sdl: $(OBJ) $(OBJS)
+	$(CC) -o $@ $(LDFLAGS) $(OBJS)
+
+$(OBJ):
+	mkdir $(OBJ)
+
+$(OBJ)/%.o: $(SRC)/%.c
+	$(CC) -c -o $@ $(CFLAGS) $?
+
+.phony: clean
+
+clean:
+	rm -fr $(OBJ)

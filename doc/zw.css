@@ -1,0 +1,121 @@
+/* Special blocks */
+
+body
+{
+    background: #232323;
+}
+
+/* Named blocks */
+
+/* Anynymous blocks */
+
+div.imageleft
+{
+    float: left;
+    padding: 20px;
+    margin: 0;
+}
+
+div.imageright
+{
+    float: right;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Headers */
+
+h1
+{
+    font-family: Courier New, Courier, monospace;
+    color: #979797;
+    font-size: 48pt;
+    font-weight: bold;
+    text-indent: 1cm;
+}
+
+h2
+{
+    font-family: Courier New, Courier, monospace;
+    color: #979797;
+    font-size: 24pt;
+    font-weight: bold;
+    text-indent: 1cm;
+}
+
+h3
+{
+    font-family: Courier New, Courier, monospace;
+    color: #979797;
+    font-size: 22pt;
+    font-weight: bold;
+    text-indent: 1cm;
+}
+
+
+/* Paragraphs */
+
+p
+{
+    font-family: Courier New, Courier, monospace;
+    color: #979797;
+    font-size: 18pt;
+    text-align: left;
+    text-indent: 1cm;
+}
+
+p.centered
+{
+    text-align: center;
+}
+
+div.imageleft p
+{
+    text-indent: 0;
+    text-align: center;
+}
+
+/* Links */
+
+a
+{
+    color: #7c70da;
+    text-decoration: none;
+    border: 0;
+    font-weight: bold;
+    
+}
+
+a.button
+{
+    padding: 20px;
+    border: 2px solid #7c70da;
+    border-radius: 10px;
+}
+
+a:hover
+{
+    background: #7c70da;
+    color: #232323;
+    text-decoration: none;
+}
+
+a.image:hover
+{
+    background: none;
+    text-decoration: none;
+    border: none;
+}
+
+/* Font styles */
+
+em
+{
+    font-weight: bold;
+}
+
+/* Images */
+
+/* Lists */
+
+/* Tables */

@@ -1,0 +1,137 @@
+#include <windows.h>
+#include "res.h"
+
+IDI_APPICON ICON  "waz.ico"
+
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "waz.manifest"
+
+/* Executable version information */
+VS_VERSION_INFO    VERSIONINFO
+FILEVERSION        0,0,0,1
+PRODUCTVERSION     0,0,0,1
+FILEFLAGSMASK      VS_FFI_FILEFLAGSMASK
+  FILEFLAGS        0
+FILEOS             VOS_NT_WINDOWS32
+FILETYPE           VFT_APP
+FILESUBTYPE        VFT2_UNKNOWN
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "080904b0"
+    BEGIN
+      VALUE "CompanyName", "printf.pl"
+      VALUE "FileDescription", "Zielony Waz"
+      VALUE "FileVersion", "0.0.0.1"
+      VALUE "InternalName", "ZielonyWaz"
+      VALUE "LegalCopyright", "© Marcin Bielewicz (2020-)"
+      VALUE "OriginalFilename", "ZielonyWaz.exe"
+      VALUE "ProductName", "Zielony Waz"
+      VALUE "ProductVersion", "0.0.0.1"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x809, 1200
+  END
+END
+
+/* Bitmaps */
+IDB_TOP BITMAP "top.bmp"
+IDB_BLOCK BITMAP "block.bmp"
+IDB_BLOCK_FROZEN BITMAP "block-frozen.bmp"
+
+IDB_SQUARE_1 BITMAP "square-1.bmp"
+IDB_SQUARE_2 BITMAP "square-2.bmp"
+IDB_SQUARE_3 BITMAP "square-3.bmp"
+IDB_SQUARE_4 BITMAP "square-4.bmp"
+
+IDB_FREEZE_1 BITMAP "freeze-1.bmp"
+IDB_FREEZE_2 BITMAP "freeze-2.bmp"
+IDB_FREEZE_3 BITMAP "freeze-3.bmp"
+IDB_FREEZE_4 BITMAP "freeze-4.bmp"
+
+IDB_DIAMOND_1 BITMAP "diamond-1.bmp"
+IDB_DIAMOND_2 BITMAP "diamond-2.bmp"
+IDB_DIAMOND_3 BITMAP "diamond-3.bmp"
+IDB_DIAMOND_4 BITMAP "diamond-4.bmp"
+
+IDB_FIREBALL_1 BITMAP "fire-ball-1.bmp"
+IDB_FIREBALL_2 BITMAP "fire-ball-2.bmp"
+IDB_FIREBALL_3 BITMAP "fire-ball-3.bmp"
+IDB_FIREBALL_4 BITMAP "fire-ball-4.bmp"
+
+IDB_CREATURE_1 BITMAP "creature-1.bmp"
+IDB_CREATURE_2 BITMAP "creature-2.bmp"
+IDB_CREATURE_3 BITMAP "creature-3.bmp"
+IDB_CREATURE_4 BITMAP "creature-4.bmp"
+IDB_CREATURE_5 BITMAP "creature-5.bmp"
+IDB_CREATURE_6 BITMAP "creature-6.bmp"
+IDB_CREATURE_7 BITMAP "creature-7.bmp"
+
+/* Snake! */
+
+IDB_SNAKE_HORIZONTAL BITMAP "pipe-horizontal.bmp"
+IDB_SNAKE_VERTICAL BITMAP "pipe-vertical.bmp"
+IDB_SNAKE_NW BITMAP "pipe-nw.bmp"
+IDB_SNAKE_SW BITMAP "pipe-sw.bmp"
+IDB_SNAKE_NE BITMAP "pipe-ne.bmp"
+IDB_SNAKE_SE BITMAP "pipe-se.bmp"
+
+IDB_HEAD_TOP BITMAP "head-top.bmp"
+IDB_HEAD_BOTTOM BITMAP "head-bottom.bmp"
+IDB_HEAD_LEFT BITMAP "head-left.bmp"
+IDB_HEAD_RIGHT BITMAP "head-right.bmp"
+
+IDB_FRZ_HORIZONTAL BITMAP "pipe-horizontal-frozen.bmp"
+IDB_FRZ_VERTICAL BITMAP "pipe-vertical-frozen.bmp"
+IDB_FRZ_NW BITMAP "pipe-nw-frozen.bmp"
+IDB_FRZ_SW BITMAP "pipe-sw-frozen.bmp"
+IDB_FRZ_NE BITMAP "pipe-ne-frozen.bmp"
+IDB_FRZ_SE BITMAP "pipe-se-frozen.bmp"
+
+IDB_FRZ_TOP BITMAP "head-top-frozen.bmp"
+IDB_FRZ_BOTTOM BITMAP "head-bottom-frozen.bmp"
+IDB_FRZ_LEFT BITMAP "head-left-frozen.bmp"
+IDB_FRZ_RIGHT BITMAP "head-right-frozen.bmp"
+
+IDB_INV_HORIZONTAL BITMAP "pipe-horizontal-inverted.bmp"
+IDB_INV_VERTICAL BITMAP "pipe-vertical-inverted.bmp"
+IDB_INV_NW BITMAP "pipe-nw-inverted.bmp"
+IDB_INV_SW BITMAP "pipe-sw-inverted.bmp"
+IDB_INV_NE BITMAP "pipe-ne-inverted.bmp"
+IDB_INV_SE BITMAP "pipe-se-inverted.bmp"
+
+IDB_INV_TOP BITMAP "head-top-inverted.bmp"
+IDB_INV_BOTTOM BITMAP "head-bottom-inverted.bmp"
+IDB_INV_LEFT BITMAP "head-left-inverted.bmp"
+IDB_INV_RIGHT BITMAP "head-right-inverted.bmp"
+
+/* Killers */
+
+IDB_KILLER_LEFT BITMAP "killer-left.bmp"
+IDB_KILLER_LEFT_B BITMAP "killer-left-bright.bmp"
+IDB_KILLER_RIGHT BITMAP "killer-right.bmp"
+IDB_KILLER_RIGHT_B BITMAP "killer-right-bright.bmp"
+
+/* Flags */
+
+IDB_FLAG_PL BITMAP "pl_flag.bmp"
+IDB_FLAG_EN BITMAP "en_flag.bmp"
+
+/* Cup(s) */
+
+IDB_CUP BITMAP "cup.bmp"
+
+/* Swords */
+
+IDB_SWORD_FIRE BITMAP "sword-fire.bmp"
+IDB_SWORD_ICE BITMAP "sword-ice.bmp"
+
+/* Sounds */
+
+IDS_COIN WAVE "coin.wav"
+IDS_PIPE WAVE "pipe.wav"
+IDS_SNAKE WAVE "snake.wav"
+IDS_POP WAVE "pop.wav"
+IDS_STAB WAVE "stab.wav"
+IDS_SWOOSH WAVE "swoosh.wav"

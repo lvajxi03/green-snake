@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Zielony wąż</title>
+    <link rel="stylesheet" type="text/css" href="/zw.css" />
+    <link rel="icon" type="image/x-icon" href="/zielony-waz/favicon.ico" />
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <div id="top">
+      <p class="centered"><a href="/zw.7z">Pobierz</a> | <a href="/green-snake">English version</a></p>
+    </div>
+  </body>
+  <h1>Zielony wąż</h1>
+  <p class="centered"><a class="button"  href="/zw.7z">Pobierz archiwum 7-zip</a></p>
+  <h2>O programie</h2>
+  <p>Gra napisana jako hołd dla oryginalnej <em>Oil's Well</em> z lat osiemdziesiątych, najpierw w języku <em>Python</em> z wykorzystaniem <em>PyQT</em>, a później w języku <em>C++</em> dla systemu <em>Windows.</em></p>
+  <div class="imageleft">
+    <p><a class="image" href="/images/game-pl.jpg"><img src="/images/game-pl-small.jpg"></a></p>
+  </div>
+  <h2>Instalacja</h2>
+  <p>Program jest rozprowadzany w postaci <em>archiwum 7-zip</em>, w środku którego znajduje się pojedynczy plik wykonywalny, w zupełności wystarczający do gry. Wystarczy rozpakować archiwum w dowolnym miejscu, nie jest wymagane tworzenie osobnego katalogu.</p>
+  <p>Domyślna czcionka jest okropna, dlatego najlepiej pobrać i zainstalować <em>C64 Pro</em> (na przykład <a href="https://style64.org/release/c64-truetype-v1.2.1-style">stąd</a>)</p>
+  <h2>Podręcznik użytkownika</h2>
+  <p>Po menu można poruszać się klawiszem kursora, a wybór zatwierdzać klawiszem <em>Enter</em> lub wybierając odpowiedną opcję lewym klawiszem myszy</p>
+  <p>Przełączanie obsługi języków możliwe jest tylko z pomocą myszy.</p>
+  <p>Program nie tworzy i nie czyta żadnych plików, ustawienia własne (ostatnio wybierany tryb gry wraz z tabelą rekordów) zapisuje w rejestrze, indywidualnie dla każdego użytkownika komputera.</p>
+  <h3>Gra</h3>
+  <div class="imageright">
+    <p><a class="image" href="/images/game-frozen-pl.jpg"><img src="/images/game-frozen-pl-small.jpg"></a></p>
+  </div>
+  <p>Zadaniem gracza jest ukończenie wszystkich poziomów gry (obecnie: sześciu) poprzez odpowiednie sterowanie zielonym wężem tak, aby odwieził wszystkie pola, na których znajdują się żółte kwadraty, fioletowe diamenty, bądź złote monety. Za zbieranie tych wszystkich obiektów ("zjedzenie obiektów") gracz otrzymuje odpowiednią liczbę punktów.</p>
+  <p>Zebranie ostatniego obiektu jest tożsame z ukończeniem poziomu. Na zbieranie obiektów przewidziana jest określona ilość czasu &mdash; dolna linijka na planszy (stan gry) pokazuje upływający czas.</p>
+  <p>Gdy przewidziany czas upłynie, a nie wszystkie obiekty zostaną zebrane, nastąpi koniec gry. Każdy poziom ma swój licznik czasu, zwiększający się wraz ze stopniem trudności poziomu.</p>
+  <p>Do poruszania się należy użyć klawszy kursora. Dodatkowo, przy pomocy klawisza backspace można się cofnąć niezależnie od kierunku.</p>
+  <p><em>Stwory</em>, przebiegające z prawa na lewo i odwrotnie, można bezkarnie konsumować, ale ważne, żeby nie zetknęły się z ciałem węża (dojdzie wtedy do kolizji)</p>
+  <p><em>Biało-czerwony duch</em> jest z kolei nieszkodliwy dla ciała węża, ale nie może dotknąć jego głowy (wtedy również dojdzie do kolizji.</p>
+  <p><em>Trzy kolizje</em> oznaczają automatyczny <em>koniec gry</em>.</p>  
+  <p>Połknięcie <em>niebieskich kulek</em> zatrzymuje licznik czasu na 20 sekund oraz ruch <em>stworów</em>. Połknięcie następnej niebieskiej kulki dobija licznik trybu do 20 sekund.</p>
+  <h3 id="#no-limit" >Tryb bez limitu czasu</h3>
+  <p>(Tryb bez limitu czasu wymyślił mój ośmioletni syn, Antoni)</p>
+  <p>Po zebraniu złotej monety generowany jest w losowym miejscu <em>miecz</em> &mdash; zebrane miecze są zliczane w prawym dolnym rogu. Dodatkowo, w trybie tym nie występują kolizje i nie działa licznik czasu.</p>
+  <p>Tryb ten zapewne nie będzie dalej rozwijany, być może kiedyś nawet zniknie z menu wyboru.</p>
+  <h2>Kontakt</h2>
+  <p>Jeśli chcesz się podzielić uwagami do gry, zgłosić błąd, albo po prostu napisać, użyj <a href="mailto:marcin@printf.pl?subject=(Zielony wąż)">tego adresu</a>.</p>
+  <h2>Różne takie</h2>
+  <p>Program ten nie powstałby bez: edytora <em>Emacs</em>, programów <em>GIMP</em> i <em>Inkscape</em>, kolekcji narzędzi <em>MSYS2</em> oraz mojego ośmioletniego syna, <em>Antoniego</em>.</p>
+  <p>Prototyp udał się dzięki minikomputerowi <em>Raspberry Pi</em> z systemm <em>Ubuntu Linux</em>, edytorowi <em>Emacs</em>, językowi programowania <em>Python</em> w wersji 3, bibliotece <em>PyQt</em> w wersji 5 oraz programom <em>GIMP</em> i <em>Inkscape</em>.</p>
+  <p>Nie pamiętam już, od kogo dostałem dźwięki, które towarzyszą grze (jeśli jesteś autorem, <a href="mailto:marcin@printf.pl">koniecznie do mnie napisz!</a>), za to napisałem własnoręcznie każdą linijkę kodu, przygotowałem w całości grafikę. Program można bezpłatnie rozprowadzać oraz grać do upadłego.</p>
+</html>

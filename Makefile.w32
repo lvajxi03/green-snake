@@ -1,0 +1,41 @@
+# ZielonyWaz -- Makefile
+
+CXX := g++
+RC := windres
+
+OBJS := obj/sword.o obj/killer.o obj/arena.o obj/main.o obj/res.o obj/snake.o obj/conf.o obj/loc.o obj/game.o obj/primi.o obj/utils.o obj/level.o obj/monster.o
+
+# Build target:
+EXE := ZielonyWaz.exe
+
+CXXFLAGS := -O0  -D UNICODE -D _UNICODE -D _WIN32_IE=0x0500 -D WINVER=0x0500 -Wall  -Iinclude -std=c++11 -g -pg
+LDFLAGS := -Wl,--subsystem,windows -lgdi32 -lwinmm -g -lmsimg32 -pg
+
+.PHONY: all clean
+
+all: bin/$(EXE)
+
+clean:
+	@echo "[  RM  ] bin"
+	@rm -rf bin
+	@echo "[  RM  ] obj"
+	@rm -rf obj
+
+bin obj:
+	@echo "[  MD  ] $@"
+	@mkdir -p "$@"
+
+obj/%.o: src/%.cc | obj
+	@echo "[  CXX  ] $< => $@"
+	@${CXX} ${CXXFLAGS} -c "$<" -o "$@"
+
+obj/res.o: src/waz.rc res/waz.manifest res/waz.ico include/res.h | obj
+	@echo "[  RC  ] $< => $@"
+	@${RC} -I./include -I./res -i "$<" -o "$@"
+
+bin/${EXE}: ${OBJS} | bin
+	@echo "[  LD  ] $@"
+	@${CXX} -o "$@" ${OBJS} ${LDFLAGS}
+
+
+# TODO: C++ header deps
