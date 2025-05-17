@@ -100,6 +100,7 @@ private:
   HPEN _game_frame;
   HBRUSH _game_fill;
   HBRUSH _game_background;
+  HANDLE _font_handle;
 };
 
 #endif /* __ARENA_H__ */

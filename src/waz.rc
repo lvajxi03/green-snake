@@ -19,14 +19,14 @@ BEGIN
   BEGIN
     BLOCK "080904b0"
     BEGIN
-      VALUE "CompanyName", "printf.pl"
+      VALUE "CompanyName", "iostream.pl"
       VALUE "FileDescription", "Zielony Waz"
       VALUE "FileVersion", "0.0.0.1"
       VALUE "InternalName", "ZielonyWaz"
-      VALUE "LegalCopyright", "© Marcin Bielewicz (2020-)"
-      VALUE "OriginalFilename", "ZielonyWaz.exe"
+      VALUE "LegalCopyright", "Â© Marcin Bielewicz (2020-)"
+      VALUE "OriginalFilename", "zw.exe"
       VALUE "ProductName", "Zielony Waz"
-      VALUE "ProductVersion", "0.0.0.1"
+      VALUE "ProductVersion", "0.0.0.2"
     END
   END
   BLOCK "VarFileInfo"
@@ -135,3 +135,7 @@ IDS_SNAKE WAVE "snake.wav"
 IDS_POP WAVE "pop.wav"
 IDS_STAB WAVE "stab.wav"
 IDS_SWOOSH WAVE "swoosh.wav"
+
+/* Fonts */
+
+IDF_EF64 BINARY "ef64-mono.ttf"

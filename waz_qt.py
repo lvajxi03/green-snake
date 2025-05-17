@@ -510,8 +510,8 @@ class Arena(QApplication):
         self.keymapping = {
             Qt.Key_Left: Key.KEY_LEFT,
             Qt.Key_Right: Key.KEY_RIGHT,
-            Qt.Key_Up: Key.KEY_TOP,
-            Qt.Key_Down: Key.KEY_BOTTOM,
+            Qt.Key_Up: Key.KEY_UP,
+            Qt.Key_Down: Key.KEY_DOWN,
             Qt.Key_Enter: Key.KEY_ENTER,
             Qt.Key_Return: Key.KEY_ENTER,
             Qt.Key_Escape: Key.KEY_ESCAPE,

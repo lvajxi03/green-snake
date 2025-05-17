@@ -4,6 +4,7 @@ bin/
 *.*~
 *~
 *.bak
+\#*.*\#
 gmon.out
 .idea
 __pycache__

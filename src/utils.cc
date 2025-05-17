@@ -11,10 +11,10 @@ Key virtkey(UINT key) {
     return KEY_RIGHT;
     break;
   case VK_DOWN:
-    return KEY_BOTTOM;
+    return KEY_DOWN;
     break;
   case VK_UP:
-    return KEY_TOP;
+    return KEY_UP;
     break;
   case VK_RETURN:
     return KEY_ENTER;

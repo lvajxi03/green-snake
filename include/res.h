@@ -108,6 +108,9 @@
 #define IDS_STAB 6004
 #define IDS_SWOOSH 6006
 
+/* Fonts */
+#define IDF_EF64 7000
+
 /* Others? */
 #ifndef IDC_STATIC
   #define IDC_STATIC -1

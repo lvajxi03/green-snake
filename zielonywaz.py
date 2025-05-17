@@ -164,8 +164,8 @@ class Key(enum.IntEnum):
     NONE = 0
     KEY_LEFT = 1
     KEY_RIGHT = 2
-    KEY_TOP = 3
-    KEY_BOTTOM = 4
+    KEY_UP = 3
+    KEY_DOWN = 4
     KEY_ENTER = 5
     KEY_ESCAPE = 6
     KEY_BACKSPACE = 7
@@ -1144,9 +1144,9 @@ class Game():
     def keypressed_menu(self, key, text):
         options = self.get_msg('menu_options')
         maxopt = len(options) - 1
-        if key == Key.KEY_TOP:
+        if key == Key.KEY_UP:
             self.option_selected -= 0 if self.option_selected == 0 else 1
-        elif key == Key.KEY_BOTTOM:
+        elif key == Key.KEY_DOWN:
             self.option_selected += 0 if self.option_selected == maxopt else 1
         elif key == Key.KEY_ENTER:
             if self.option_selected == MenuOption.NEWGAME:
@@ -1207,10 +1207,10 @@ class Game():
         elif key == Key.KEY_RIGHT:
             if self.is_started() or self.is_frozen():
                 self.move_right()
-        elif key == Key.KEY_TOP:
+        elif key == Key.KEY_UP:
             if self.is_started() or self.is_frozen():
                 self.move_up()
-        elif key == Key.KEY_BOTTOM:
+        elif key == Key.KEY_DOWN:
             if self.is_started() or self.is_frozen():
                 self.move_down()
         elif key == Key.KEY_SPACE:
@@ -1234,9 +1234,9 @@ class Game():
                 self.move_back()
 
     def keypressed_options(self, key, text):
-        if key == Key.KEY_TOP:
+        if key == Key.KEY_UP:
             self.option -= 0 if self.option == 0 else 1
-        elif key == Key.KEY_BOTTOM:
+        elif key == Key.KEY_DOWN:
             self.option += 0 if self.option == self.maxset else 1
         elif key == Key.KEY_ENTER:
             self.configuration.set_mode(self.option)

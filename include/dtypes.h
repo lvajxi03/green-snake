@@ -7,8 +7,8 @@ typedef enum _Key {
   KEY_NONE,
   KEY_LEFT,
   KEY_RIGHT,
-  KEY_TOP,
-  KEY_BOTTOM,
+  KEY_UP,
+  KEY_DOWN,
   KEY_ENTER,
   KEY_ESCAPE,
   KEY_BACKSPACE,
@@ -22,7 +22,9 @@ typedef enum _MouseButton {
   BUTTON_RIGHT,
   BUTTON_MIDDLE,
   BUTTONSCROLL_UP,
-  BUTTON_SCROLL_DOWN
+  BUTTONSCROLL_DOWN,
+  BUTTONSCROLL_LEFT,
+  BUTTONSCROLL_RIGHT
 } MouseButton;
 
 typedef struct _MouseEvent {
